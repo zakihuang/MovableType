@@ -1,0 +1,35 @@
+{
+  "name": "MovableType",
+  "version": "1.0.0",
+  "description": "纯渲染型配置引擎 - JSON 即表单",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "docs:dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider dumi dev",
+    "docs:build": "cross-env NODE_OPTIONS=--openssl-legacy-provider dumi build"
+  },
+  "dependencies": {
+    "antd": "^4.24.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "@types/react": "^17.0.52",
+    "@types/react-dom": "^17.0.19",
+    "cross-env": "^7.0.3",
+    "dumi": "^1.1.50",
+    "typescript": "^4.9.5",
+    "umi": "3.5.43"
+  },
+  "peerDependencies": {
+    "antd": "^4.24.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

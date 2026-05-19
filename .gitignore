@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# umi/dumi
+.src/.umi/
+.dumi_tmp/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# logs
+*.log
+npm-debug.log*
+
+# system
+.DS_Store
+Thumbs.db
+
+# env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
