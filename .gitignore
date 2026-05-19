@@ -3,7 +3,6 @@ node_modules/
 
 # build output
 dist/
-docs/
 
 # umi/dumi
 src/.umi/
