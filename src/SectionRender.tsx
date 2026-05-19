@@ -45,7 +45,9 @@ const SectionRenderCore: React.FC<SectionRenderCoreProps> = ({
     return Object.keys(resolvedFields).filter((key) => resolvedFields[key].component === 'Hidden')
   }, [resolvedFields])
   const hiddenSection = hiddenFieldKeys.map((fieldKey) => (
-    <Form.Item key={fieldKey} hidden name={resolvedFields[fieldKey].name} />
+    <Form.Item key={fieldKey} hidden name={resolvedFields[fieldKey].name}>
+      <input type="hidden" />
+    </Form.Item>
   ))
 
   // ---- 自定义布局：通过 components 加载业务组件，引擎仅负责挂载 ----

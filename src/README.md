@@ -32,6 +32,7 @@
 :::demo
 ```tsx
 import React from 'react'
+import 'antd/dist/antd.css';
 import { Form } from 'antd'
 import { MovableType } from '@/'
 
@@ -277,6 +278,7 @@ const components = {
 :::demo
 ```tsx
 import React from 'react'
+import 'antd/dist/antd.css';
 import { Form } from 'antd'
 import { MovableType } from '@/'
 
@@ -416,6 +418,7 @@ const config = {
 :::demo
 ```tsx
 import React from 'react'
+import 'antd/dist/antd.css';
 import { Form, Button, message } from 'antd'
 import { useCallback, useEffect, useState } from 'react'
 import { debounce } from 'lodash'
