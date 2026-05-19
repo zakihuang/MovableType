@@ -1,5 +1,5 @@
 {
-  "name": "MovableType",
+  "name": "movable-type",
   "version": "1.0.0",
   "description": "纯渲染型配置引擎 - JSON 即表单",
   "main": "dist/index.js",
@@ -16,6 +16,7 @@
   "dependencies": {
     "antd": "^4.24.0",
     "lodash": "^4.17.21",
+    "movable-type": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -31,6 +32,10 @@
   "peerDependencies": {
     "antd": "^4.24.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "movable-type": "^1.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }

@@ -34,7 +34,7 @@
 import React from 'react'
 import 'antd/dist/antd.css';
 import { Form } from 'antd'
-import { MovableType } from '@/'
+import { MovableType } from 'movable-type'
 
 // 1. 定义字段池（全局复用）
 const fields = {
@@ -222,7 +222,7 @@ const config = {
 ### 5.1 同步渲染器（推荐简单场景）
 
 ```ts
-import { ComponentRenderer } from '@/'
+import { ComponentRenderer } from 'movable-type'
 
 const MyRenderer: ComponentRenderer = {
   // 编辑态渲染
@@ -252,8 +252,8 @@ const MyRenderer: ComponentRenderer = {
 
 ```ts
 const components = {
-  TradeInfo: () => import('@/components/TradeInfo'),
-  ComplexChart: () => import('@/components/ComplexChart'),
+  TradeInfo: () => import('movable-typecomponents/TradeInfo'),
+  ComplexChart: () => import('movable-typecomponents/ComplexChart'),
 }
 
 <MovableType config={config} fields={fields} components={components} />
@@ -280,7 +280,7 @@ const components = {
 import React from 'react'
 import 'antd/dist/antd.css';
 import { Form } from 'antd'
-import { MovableType } from '@/'
+import { MovableType } from 'movable-type'
 
 const fields = {
   companyName: { name: 'companyName', label: '企业名称', component: 'Input' },
@@ -356,7 +356,7 @@ const config = {
 ```ts
 // 1. 注册自定义区块组件（必须是懒加载函数）
 const components = {
-  TradeSection: () => import('@/components/TradeSection'),
+  TradeSection: () => import('movable-typecomponents/TradeSection'),
 }
 
 // 2. 表单配置中引用
@@ -422,7 +422,7 @@ import 'antd/dist/antd.css';
 import { Form, Button, message } from 'antd'
 import { useCallback, useEffect, useState } from 'react'
 import { debounce } from 'lodash'
-import { MovableType } from '@/'
+import { MovableType } from 'movable-type'
 
 const fieldPool = {
   companyName: { name: 'companyName', label: '企业名称', component: 'Input' },

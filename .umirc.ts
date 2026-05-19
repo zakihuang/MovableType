@@ -11,6 +11,16 @@ export default defineConfig({
   outputPath: 'docs',
   publicPath: isDeploy ? '/MovableType/' : '/',
   base: isDeploy ? '/MovableType' : '/',
+  externals: {
+    react: 'window.React',
+    'react-dom': 'window.ReactDOM',
+    antd: 'window.antd',
+  },
+  scripts: [
+    'https://unpkg.com/react@17/umd/react.production.min.js',
+    'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js',
+    'https://unpkg.com/antd@4/dist/antd.min.js',
+  ],
   routes: [
     { path: '/', component: './src/README.md', exact: true },
   ],
