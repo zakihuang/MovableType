@@ -31,7 +31,7 @@ export default defineConfig({
     '@': path.join(__dirname, 'src'),
   },
   resolve: {
-    includes: ['src'],
+    includes: ['.', 'src'],
   },
   // routes: [
   //   { path: '/', component: 'README' },
