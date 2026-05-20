@@ -6,7 +6,7 @@ order: 3
 
 🔗 [GitHub 仓库](https://github.com/goldnet/MovableType)
 
-<img src="/logo.svg" width="200" alt="MovableType AI" style="display:block;margin:24px auto;" />
+<img src="https://raw.githubusercontent.com/goldnet/MovableType/main/docs/logo.svg" width="200" alt="MovableType AI" style="display:block;margin:24px auto;" />
 
 > 当大语言模型成为 co-worker，我们需要的不是"AI 能写的代码"，而是"AI 最擅长生成的东西"。
 
@@ -36,7 +36,7 @@ order: 3
 
 > 两种工作方式的对比：
 
-<img src="/woodblockToMovabletype.jpeg" width="100%" alt="雕版印刷 vs 活字印刷" style="display:block;margin:16px auto;border-radius:8px;" />
+<img src="https://raw.githubusercontent.com/goldnet/MovableType/main/docs/woodblockToMovabletype.jpeg" width="100%" alt="雕版印刷 vs 活字印刷" style="display:block;margin:16px auto;border-radius:8px;" />
 
 ---
 
@@ -65,7 +65,7 @@ AI 生成表单时，不再是"写一页 React 组件"，而是完成两件事�
 
 > AI 驱动的活字排版架构：
 
-<img src="/aiDrivenMovable.jpeg" width="100%" alt="AI 驱动 MovableType 架构" style="display:block;margin:16px auto;border-radius:8px;" />
+<img src="https://raw.githubusercontent.com/goldnet/MovableType/main/docs/aiDrivenMovable.jpeg" width="100%" alt="AI 驱动 MovableType 架构" style="display:block;margin:16px auto;border-radius:8px;" />
 
 ---
 
