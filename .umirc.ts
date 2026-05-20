@@ -6,9 +6,9 @@ const isDeploy = process.env.DEPLOY === '1';
 export default defineConfig({
   mode: 'doc',
   title: 'MovableType',
-  logo: '/logo.svg',
+  logo: isDeploy ? '/MovableType/logo.svg' : '/logo.svg',
   links: [
-    { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' },
+    { rel: 'icon', type: 'image/svg+xml', href: isDeploy ? '/MovableType/logo.svg' : '/logo.svg' },
   ],
   description: '纯渲染型配置引擎, 为 AI 而生',
   locales: [['zh-CN', '中文']],

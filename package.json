@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "docs:dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider dumi dev",
-    "docs:build": "cross-env DEPLOY=1 NODE_OPTIONS=--openssl-legacy-provider dumi build"
+    "docs:build": "cross-env DEPLOY=1 NODE_OPTIONS=--openssl-legacy-provider dumi build && node scripts/fix-public-path.js"
   },
   "dependencies": {
     "antd": "^4.24.0",
