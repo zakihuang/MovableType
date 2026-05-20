@@ -33,10 +33,6 @@ export default defineConfig({
   resolve: {
     includes: ['.', 'src'],
   },
-  // routes: [
-  //   { path: '/', component: 'README' },
-  //   { path: '/ai', component: 'READMEAI' },
-  // ],
   copy: [
     { from: 'src/assets/logo.svg', to: 'logo.svg' },
     { from: 'src/assets/aiDrivenMovable.jpeg', to: 'aiDrivenMovable.jpeg' },
