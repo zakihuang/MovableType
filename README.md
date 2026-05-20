@@ -4,7 +4,7 @@ order: 2
 
 # MovableType 入门教程
 
-🔗 [GitHub 仓库](https://github.com/goldnet/MovableType)
+🔗 [GitHub 仓库](https://github.com/zakihuang/MovableType)
 
 ## 一、为什么需要 MovableType？
 

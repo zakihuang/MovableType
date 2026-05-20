@@ -4,7 +4,7 @@ order: 5
 
 # MovableType 的一些例子
 
-🔗 [GitHub 仓库](https://github.com/goldnet/MovableType)
+🔗 [GitHub 仓库](https://github.com/zakihuang/MovableType)
 
 ## 例一：单一场景表单
 

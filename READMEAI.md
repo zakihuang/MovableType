@@ -4,7 +4,7 @@ order: 3
 
 # MovableType 为AI而生
 
-🔗 [GitHub 仓库](https://github.com/goldnet/MovableType)
+🔗 [GitHub 仓库](https://github.com/zakihuang/MovableType)
 
 <img src="https://blog.7hihi.com/MovableType/logo.svg" width="200" alt="MovableType AI" style="display:block;margin:24px auto;" />
 

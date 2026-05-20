@@ -4,7 +4,7 @@ order: 1
 
 # MovableType 的诞生背景
 
-🔗 [GitHub 仓库](https://github.com/goldnet/MovableType)
+🔗 [GitHub 仓库](https://github.com/zakihuang/MovableType)
 
 ## MovableType 的故事
 

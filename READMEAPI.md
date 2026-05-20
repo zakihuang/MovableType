@@ -4,7 +4,7 @@ order: 4
 
 # MovableType API
 
-🔗 [GitHub 仓库](https://github.com/goldnet/MovableType)
+🔗 [GitHub 仓库](https://github.com/zakihuang/MovableType)
 
 ## 核心组件
 
