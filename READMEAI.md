@@ -4,6 +4,8 @@ order: 3
 
 # MovableType 为AI而生
 
+🔗 [GitHub 仓库](https://github.com/goldnet/MovableType)
+
 <img src="/logo.svg" width="200" alt="MovableType AI" style="display:block;margin:24px auto;" />
 
 > 当大语言模型成为 co-worker，我们需要的不是"AI 能写的代码"，而是"AI 最擅长生成的东西"。

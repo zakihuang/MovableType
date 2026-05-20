@@ -4,6 +4,8 @@ order: 5
 
 # MovableType 的一些例子
 
+🔗 [GitHub 仓库](https://github.com/goldnet/MovableType)
+
 ## 例一：单一场景表单
 
 最简用法，无金融机构切换，直接渲染。

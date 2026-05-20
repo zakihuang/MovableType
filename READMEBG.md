@@ -4,6 +4,8 @@ order: 1
 
 # MovableType 的诞生背景
 
+🔗 [GitHub 仓库](https://github.com/goldnet/MovableType)
+
 ## MovableType 的故事
 
 我在一家供应链金融平台做技术开发。公司的核心工作，是为平台对接各家金融机构。

@@ -4,6 +4,8 @@ order: 2
 
 # MovableType 入门教程
 
+🔗 [GitHub 仓库](https://github.com/goldnet/MovableType)
+
 ## 一、为什么需要 MovableType？
 
 如果你写过前端表单，一定经历过这样的崩溃时刻：
@@ -32,6 +34,14 @@ MovableType 就是这个思路在现代前端表单里的应用。
 假设你要做一个"企业信息"表单，有三个字段：企业名称、注册资本、成立日期。
 
 传统做法：手写 JSX，写校验规则，写布局。MovableType 的做法分三步：
+
+> **安装**
+
+```bash
+npm install movable-type
+```
+
+MovableType 基于 **React 17+** 和 **Ant Design 4**，使用前请确保项目已安装这两个依赖。
 
 ### 第一步：定义字段池
 
