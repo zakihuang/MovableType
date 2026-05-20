@@ -156,7 +156,7 @@ export default function MyPage() {
 
 理解 MovableType，关键是理解三个概念，它们正好对应活字印刷的三个环节：
 
-<img src="https://raw.githubusercontent.com/goldnet/MovableType/main/docs/aiDrivenMovable.jpeg" width="100%" alt="MovableType 架构图" style="display:block;margin:16px auto;border-radius:8px;" />
+<img src="https://blog.7hihi.com/MovableType/aiDrivenMovable.jpeg" width="100%" alt="MovableType 架构图" style="display:block;margin:16px auto;border-radius:8px;" />
 
 | 概念 | 活字印刷的类比 | 作用 |
 |------|--------------|------|
