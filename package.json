@@ -1,7 +1,7 @@
 {
   "name": "movable-type",
   "version": "1.0.0",
-  "description": "纯渲染型配置引擎 - JSON 即表单",
+  "description": "纯渲染型配置引擎, 为 AI 而生",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

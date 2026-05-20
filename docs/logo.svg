@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E3A5F"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 活字印刷盘底 -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bg)" stroke="#334155" stroke-width="2"/>
+
+  <!-- 排版网格线 -->
+  <g stroke="#334155" stroke-width="1.5" opacity="0.5">
+    <line x1="44" y1="20" x2="44" y2="108"/>
+    <line x1="84" y1="20" x2="84" y2="108"/>
+    <line x1="20" y1="44" x2="108" y2="44"/>
+    <line x1="20" y1="84" x2="108" y2="84"/>
+  </g>
+
+  <!-- 四角字段池字模 -->
+  <rect x="24" y="24" width="16" height="16" rx="3" fill="#CBD5E1"/>
+  <rect x="88" y="24" width="16" height="16" rx="3" fill="#CBD5E1"/>
+  <rect x="24" y="88" width="16" height="16" rx="3" fill="#CBD5E1"/>
+  <rect x="88" y="88" width="16" height="16" rx="3" fill="#CBD5E1"/>
+
+  <!-- 四边已选中字段 -->
+  <rect x="48" y="24" width="32" height="16" rx="3" fill="#94A3B8"/>
+  <rect x="24" y="48" width="16" height="32" rx="3" fill="#94A3B8"/>
+  <rect x="88" y="48" width="16" height="32" rx="3" fill="#94A3B8"/>
+  <rect x="48" y="88" width="32" height="16" rx="3" fill="#94A3B8"/>
+
+  <!-- 中央核心活字（发光） -->
+  <rect x="48" y="48" width="32" height="32" rx="6" fill="url(#gold)" filter="url(#glow)"/>
+</svg>

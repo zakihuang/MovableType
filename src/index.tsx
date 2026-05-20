@@ -1,13 +1,13 @@
 import React from 'react'
-import { FormConfig, ComponentRegistryItem, FieldDescriptor, SectionDescriptor } from './types'
+import { Config, ComponentRegistryItem, FieldDescriptor, SectionDescriptor } from './types'
 import { SectionRender } from './SectionRender'
 
 // ==========================================
 // 表单渲染引擎（纯渲染引擎，Form 由外部包裹）
 // ==========================================
 export const MovableType: React.FC<{
-  /** 当前要渲染的表单配置（由外部自行决定从 formConfigs 中选取） */
-  config: FormConfig
+  /** 当前要渲染的表单配置（由外部自行决定从 Configs 中选取） */
+  config: Config
   mode?: 'edit' | 'view'
   /** 全局字段池 */
   fields: Record<string, FieldDescriptor>

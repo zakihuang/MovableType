@@ -163,7 +163,8 @@ export function FieldSlot({
   if (!needsWatch) {
     const visible = (descriptor as any).visible !== false
     if (!visible) return null
-    const core = <FieldSlotCore descriptor={descriptor} mode={mode} components={components} formItemProps={formItemProps} fields={fields} />
+    const resolvedMode = (descriptor as any).mode ?? mode
+    const core = <FieldSlotCore descriptor={descriptor} mode={resolvedMode} components={components} formItemProps={formItemProps} fields={fields} />
     return colSpan != null ? <Col span={colSpan}>{core}</Col> : core
   }
 
@@ -186,7 +187,8 @@ export function FieldSlot({
         const resolved = { ...descriptor, ...computed }
         const visible = (resolved as any).visible !== false
         if (!visible) return null
-        const core = <FieldSlotCore descriptor={resolved as FieldDescriptor} mode={mode} components={components} formItemProps={formItemProps} fields={fields} />
+        const resolvedMode = (resolved as any).mode ?? mode
+        const core = <FieldSlotCore descriptor={resolved as FieldDescriptor} mode={resolvedMode} components={components} formItemProps={formItemProps} fields={fields} />
         return colSpan != null ? <Col span={colSpan}>{core}</Col> : core
       }}
     </Form.Item>

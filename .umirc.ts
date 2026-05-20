@@ -6,7 +6,11 @@ const isDeploy = process.env.DEPLOY === '1';
 export default defineConfig({
   mode: 'doc',
   title: 'MovableType',
-  description: '纯渲染型配置引擎 - JSON 即表单',
+  logo: '/logo.svg',
+  links: [
+    { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' },
+  ],
+  description: '纯渲染型配置引擎, 为 AI 而生',
   locales: [['zh-CN', '中文']],
   outputPath: 'docs',
   publicPath: isDeploy ? '/MovableType/' : '/',
@@ -15,14 +19,13 @@ export default defineConfig({
     react: 'window.React',
     'react-dom': 'window.ReactDOM',
     antd: 'window.antd',
+    moment: 'window.moment',
   },
   scripts: [
     'https://unpkg.com/react@17/umd/react.production.min.js',
     'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js',
+    'https://unpkg.com/moment@2.29.4/min/moment.min.js',
     'https://unpkg.com/antd@4/dist/antd.min.js',
-  ],
-  routes: [
-    { path: '/', component: './src/README.md', exact: true },
   ],
   alias: {
     '@': path.join(__dirname, 'src'),
@@ -30,4 +33,13 @@ export default defineConfig({
   resolve: {
     includes: ['src'],
   },
+  // routes: [
+  //   { path: '/', component: 'README' },
+  //   { path: '/ai', component: 'READMEAI' },
+  // ],
+  copy: [
+    { from: 'src/assets/logo.svg', to: 'logo.svg' },
+    { from: 'src/assets/aiDrivenMovable.jpeg', to: 'aiDrivenMovable.jpeg' },
+    { from: 'src/assets/woodblockToMovabletype.jpeg', to: 'woodblockToMovabletype.jpeg' },
+  ],
 });

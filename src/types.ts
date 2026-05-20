@@ -9,6 +9,8 @@ export interface OptionItem {
 }
 
 export interface FieldDescriptor {
+  /** 强制指定字段模式（优先级高于全局 mode）：edit | view */
+  mode?: 'edit' | 'view'
   /** 表单字段路径：支持扁平字符串 'fieldName' 或嵌套路径 ['finance', 'amount'] */
   name: string | string[]
   label: string
@@ -67,7 +69,7 @@ export interface SectionDescriptor {
   [key: string]: any
 }
 
-export interface FormConfig {
+export interface Config {
   code: string
   name: string
   /** 按模块分组的能力描述。不传时退化为简单表单，取顶层 fields / columns */
@@ -89,11 +91,11 @@ export type ComponentRegistryItem = ComponentRenderer | (() => Promise<any>)
 
 /**
  * 配置引擎的统一配置入口
- * 将 fields、components、formConfigs 三合一，减少调用方导入成本
+ * 将 fields、components、Configs 三合一，减少调用方导入成本
  */
 export interface MovableTypeConfig {
-  /** 表单配置表：key -> FormConfig */
-  formConfigs: Record<string, FormConfig>
+  /** 表单配置表：key -> Config */
+  Configs: Record<string, Config>
   /** 全局字段池：字段名 -> 字段定义 */
   fields: Record<string, FieldDescriptor>
   /** 统一组件注册表：同步渲染器（ComponentRenderer）或异步懒加载函数。与内置合并，同名覆盖 */
