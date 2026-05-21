@@ -27,6 +27,11 @@ export default defineConfig({
     'https://unpkg.com/moment@2.29.4/min/moment.min.js',
     'https://unpkg.com/antd@4/dist/antd.min.js',
   ],
+  headScripts: [
+    // 统计
+    `window.localStorage.wmUserInfo = JSON.stringify({ userId: 'userId', userTag: 'tag', projectVersion: '1.0.1', env: 'pro' })`,
+    `(function(f){var e=f.sessionStorage;if(e){e.CUSTOMER_WEB_MONITOR_ID="webfunny_20260521_103505_pro";var d=document.createElement("script");d.async=1;d.src="//webmonitor.hang-xin.cn/webfunny/w.js";var g=document.getElementsByTagName("script")[0];g.parentNode.insertBefore(d,g)}})(window);`,
+  ],
   alias: {
     '@': path.join(__dirname, 'src'),
   },
