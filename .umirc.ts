@@ -29,7 +29,7 @@ export default defineConfig({
   ],
   headScripts: [
     // 统计
-    `window.localStorage.wmUserInfo = JSON.stringify({ userId: 'userId', userTag: 'tag', projectVersion: '1.0.1', env: 'pro' })`,
+    `window.localStorage.wmUserInfo = JSON.stringify({ userTag: 'tag', projectVersion: '1.0.1', env: 'pro' })`,
     `(function(f){var e=f.sessionStorage;if(e){e.CUSTOMER_WEB_MONITOR_ID="webfunny_20260521_103505_pro";var d=document.createElement("script");d.async=1;d.src="//webmonitor.hang-xin.cn/webfunny/w.js";var g=document.getElementsByTagName("script")[0];g.parentNode.insertBefore(d,g)}})(window);`,
   ],
   alias: {
