@@ -1,6 +1,6 @@
 {
   "name": "movable-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "纯渲染型配置引擎, 为 AI 而生",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
